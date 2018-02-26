@@ -1,13 +1,16 @@
 package test_pkg;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import org.junit.Assert;
 
 public class CircleTest {
-    @Test
-    public void calculateAreaGettingTwoPositivesIntegersWorks() {
-        int result = 2 + 2;
+    @Test (expected = IllegalStateException.class)
+    public void settingCirclesAreaWithNegativeDoubleThrowsIllegalStateException() {
+        double area = -5;
+        try {
+            new Circle(area);
+        } catch (IllegalStateException ignore) {}
 
-        assertEquals(4, result);
+        Assert.fail();
     }
 }
