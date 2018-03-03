@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Rectangle extends Form {
+public class Rectangle extends Figure {
     private double base;
     private double height;
 
@@ -21,5 +21,21 @@ public class Rectangle extends Form {
     @Override
     double getPerimeter() {
         return 2 * (base + height);
+    }
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
     }
 }

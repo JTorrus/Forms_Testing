@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Circle extends Form {
+public class Circle extends Figure {
     private double radius;
 
     public Circle(double radius) {

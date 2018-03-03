@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Square extends Form {
+public class Square extends Figure {
     private double side;
 
     public Square(double side) {
