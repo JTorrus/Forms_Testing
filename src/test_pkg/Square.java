@@ -1,9 +1,9 @@
 package test_pkg;
 
-public class Square extends Figure {
+class Square extends Figure {
     private double side;
 
-    public Square(double side) {
+    Square(double side) {
         if (side > 0) {
             this.side = side;
         } else {

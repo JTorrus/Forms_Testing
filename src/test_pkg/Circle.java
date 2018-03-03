@@ -1,9 +1,9 @@
 package test_pkg;
 
-public class Circle extends Figure {
+class Circle extends Figure {
     private double radius;
 
-    public Circle(double radius) {
+    Circle(double radius) {
         if (radius > 0) {
             this.radius = radius;
         } else {

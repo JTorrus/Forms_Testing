@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Comparator {
+class Comparator {
     private Figure figureOne;
     private Figure figureTwo;
 
@@ -10,10 +10,22 @@ public class Comparator {
     }
 
     void compareArea(Figure figureOne, Figure figureTwo) {
+        if (figureOne.getArea() > figureTwo.getArea()) {
 
+        } else if (figureOne.getArea() < figureTwo.getArea()) {
+
+        } else {
+
+        }
     }
 
     void comparePerimeter(Figure figureOne, Figure figureTwo) {
+        if (figureOne.getPerimeter() > figureTwo.getPerimeter()) {
 
+        } else if (figureOne.getPerimeter() < figureTwo.getPerimeter()) {
+
+        } else {
+
+        }
     }
 }
