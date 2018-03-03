@@ -1,6 +1,6 @@
 package test_pkg;
 
-public interface Form {
-    double getArea();
-    double getPerimeter();
+public abstract class Form {
+    abstract double getArea();
+    abstract double getPerimeter();
 }

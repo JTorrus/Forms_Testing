@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Circle implements Form {
+public class Circle extends Form {
     private double radius;
 
     public Circle(double radius) {
@@ -12,12 +12,12 @@ public class Circle implements Form {
     }
 
     @Override
-    public double getArea() {
+    double getArea() {
         return Math.PI * (Math.pow(radius, 2));
     }
 
     @Override
-    public double getPerimeter() {
+    double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 }

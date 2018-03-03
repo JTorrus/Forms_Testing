@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Rectangle implements Form {
+public class Rectangle extends Form {
     private double base;
     private double height;
 
@@ -14,12 +14,12 @@ public class Rectangle implements Form {
     }
 
     @Override
-    public double getArea() {
+    double getArea() {
         return base * height;
     }
 
     @Override
-    public double getPerimeter() {
+    double getPerimeter() {
         return 2 * (base + height);
     }
 }

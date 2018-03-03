@@ -1,6 +1,6 @@
 package test_pkg;
 
-public class Square implements Form {
+public class Square extends Form {
     private double side;
 
     public Square(double side) {
@@ -12,12 +12,12 @@ public class Square implements Form {
     }
 
     @Override
-    public double getArea() {
+    double getArea() {
         return Math.pow(side, 2);
     }
 
     @Override
-    public double getPerimeter() {
+    double getPerimeter() {
         return side * 4;
     }
 }
