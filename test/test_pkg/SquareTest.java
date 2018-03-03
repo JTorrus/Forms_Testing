@@ -15,7 +15,7 @@ public class SquareTest {
     }
 
     @Test
-    public void calculatingRectanglesAreaWithPositiveDoublesWorks() {
+    public void calculatingSquaresAreaWithPositiveDoubleWorks() {
         double side = 10;
         Square square = new Square(side);
 
@@ -23,7 +23,7 @@ public class SquareTest {
     }
 
     @Test
-    public void calculatingRectanglesPerimeterWithPositiveDoublesWorks() {
+    public void calculatingSquaresPerimeterWithPositiveDoubleWorks() {
         double side = 10;
         Square square = new Square(side);
 
