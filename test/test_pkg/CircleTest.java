@@ -1,12 +1,12 @@
 package test_pkg;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
-import org.junit.jupiter.api.BeforeAll;
 
 public class CircleTest {
-    private double defaultDelta = 0.1;
+    private final double DEFAULT_DELTA = 0.1;
+    private final double TEST_AREA = 314.1592653589793;
+    private final double TEST_PERIMETER = 62.83185307179586;
 
     @Test (expected = IllegalStateException.class)
     public void settingCirclesRadiusWithNegativeDoubleOrZeroThrowsIllegalStateException() {
@@ -15,18 +15,18 @@ public class CircleTest {
     }
 
     @Test
-    public void calculatingCirclesAreaWithPositiveRadiusWorks() {
+    public void calculatingCirclesAreaWithPositiveDoubleWorks() {
         double radius = 10;
         Circle circle = new Circle(radius);
 
-        Assert.assertEquals(314.1592653589793, circle.getArea(), defaultDelta);
+        Assert.assertEquals(TEST_AREA, circle.getArea(), DEFAULT_DELTA);
     }
 
     @Test
-    public void calculatingCirclesPerimeterWithPositiveRadiusWorks() {
+    public void calculatingCirclesPerimeterWithPositiveDoubleWorks() {
         double radius = 10;
         Circle circle = new Circle(radius);
 
-        Assert.assertEquals(62.83185307179586, circle.getPerimeter(), defaultDelta);
+        Assert.assertEquals(TEST_PERIMETER, circle.getPerimeter(), DEFAULT_DELTA);
     }
 }
